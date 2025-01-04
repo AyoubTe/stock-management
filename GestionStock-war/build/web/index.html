@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Gestion de stock</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+</head>
+<body>
+<!-- Header -->
+<div id="header">
+  <div class="shell">
+    <!-- Logo + Top Nav -->
+    <div id="top">
+      <h1><a href="#">Gestion de stock</a></h1>
+      <div id="top-navigation"> Bienvenue <a href="#"><strong>Administrator</strong></a> <span>|</span> <a href="#">Aide</a> <span>|</span> <a href="#">Les paramètres du profil</a> <span>|</span> <a href="#">Déconnection</a> </div>
+    </div>
+    <!-- End Logo + Top Nav -->
+    <!-- Main Nav -->
+    <div id="navigation">
+      <ul>
+        <li><a href="http://localhost:8080/GestionStock-war/" class="active"><span>Panel de gestion</span></a></li>
+        <li><a href="http://localhost:8080/GestionStock-war/AjoutElementStock"><span>Ajouter au stock</span></a></li>
+        <li><a href="http://localhost:8080/GestionStock-war/SortieStock"><span>Retiré de stock</span></a></li>
+        <li><a href="http://localhost:8080/GestionStock-war/VoirProduitsStock"><span>Consulter le stock</span></a></li>
+        <li><a href="http://localhost:8080/GestionStock-war/Produits"><span>Les produits</span></a></li>
+      </ul>
+    </div>
+    <!-- End Main Nav -->
+  </div>
+</div>
+<!-- End Header -->
+<!-- Container -->
+<div id="container">
+  <div class="shell">
+    <!-- Small Nav -->
+    <div class="small-nav"> <a href="http://localhost:8080/GestionStock-war/">Panel de gestion</a> <span>&gt;</span> Les arciles actuelles </div>
+    <!-- End Small Nav -->
+    <!-- Main -->
+    <div id="main">
+      <div class="cl">&nbsp;</div>
+      <!-- Content -->
+      <div id="content">
+        <!-- Box -->
+        <div class="box">
+          <!-- Box Head -->
+          <div class="box-head">
+            <h2 class="left">La liste des stocks</h2>
+            <div class="right">
+              <label>Chercher un stock</label>
+              <input type="text" class="field small-field" />
+              <input type="submit" class="button" value="rechercher" />
+            </div>
+          </div>
+          <!-- End Box Head -->
+          
+          <!-- Table -->
+          <div class="table">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <th width="13"><input type="checkbox" class="checkbox" /></th>
+                <th>Nom</th>
+                <th width="110" class="ac">Gestion des articles</th>
+              </tr>
+                <tr class="odd">
+                    <td><input type="checkbox" class="checkbox" /></td>
+                    <td><h3><a href="#">Nomstock</a></h3></td>
+                    <td><a href="#" class="ico del">Supprimer</a><a href="#" class="ico edit">Modifier</a></td>
+                </tr>
+            </table>
+            <!-- Pagging -->
+            <div class="pagging">
+              <div class="left">Affichage 1-12 of 44</div>
+              <div class="right"> <a href="#">Précedant</a> <a href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">245</a> <span>...</span> <a href="#">Next</a> <a href="#">View all</a> </div>
+            </div>
+            <!-- End Pagging -->
+          </div>
+          <!-- Table -->
+        </div>
+        <!-- End Box -->
+      </div>
+    </div>
+    <!-- Main -->
+  </div>
+</div>
+<!-- End Container -->
+</body>
+</html>
